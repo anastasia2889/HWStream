@@ -32,7 +32,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public void setDepartment(int department) {
+    public void setDepartment( int department) {
         this.department = department;
         if (department == 1) {
             this.salary = 12000.0;

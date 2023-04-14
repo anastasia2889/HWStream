@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public  class Streams5Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Streams5Application.class, args);
+         SpringApplication.run(Streams5Application.class, args);
     }
 
 }
