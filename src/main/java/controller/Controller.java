@@ -41,15 +41,16 @@ public class Controller {
         return service.findMinSalaryInDepartment(department);
     }
     @GetMapping("/departments/max-salary")
-    public Employee findMaxSalaryInDepartment(@RequestParam int department) {
-        return service.findMaxSalaryInDepartment(department);
+    public Employee findMaxSalaryInDepartment(@RequestParam Integer department) {
+        return null;
     }
     @GetMapping("/departments/all")
-    public Collection<Employee> findAllInDepartment(@RequestParam(required = false) Integer department) {
-        if (department == null) {
-            return service.findAllByDepartments();
-        }
+    public Collection<Employee> findAllInDepartment(@RequestParam int department) {
         return service.findAllInDepartment(department);
+    }
+    @GetMapping("/departments/allEmployees")
+    public Collection<Employee> findAllDepartments(){
+        return service.findAllByDepartments();
     }
 }
 

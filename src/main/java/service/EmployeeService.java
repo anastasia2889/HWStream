@@ -14,7 +14,7 @@ public interface  EmployeeService {
     Employee findMinSalaryInDepartment(int department);
     Employee findMaxSalaryInDepartment(int department);
     Collection<Employee> findAllInDepartment(int department);
-    Collection<Employee> findAllByDepartments();
+    Collection<Employee>findAllByDepartments();
     boolean fillEmployees();
 }
 

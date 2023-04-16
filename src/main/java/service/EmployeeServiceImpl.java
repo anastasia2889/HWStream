@@ -89,7 +89,7 @@ public class  EmployeeServiceImpl implements  EmployeeService {
     }
 
     @Override
-    public Collection<Employee> findAllByDepartments() {
+    public Collection<Employee>findAllByDepartments() {
         Collection<Employee> employeesByDepartment = employees.values().stream()
                 .sorted((employee1, employee2) -> employee1.getDepartment() - employee2.getDepartment()).toList();
         return employeesByDepartment;
