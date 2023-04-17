@@ -3,19 +3,15 @@ package service;
 import model.Employee;
 
 import  java.util.Collection;
+import java.util.Map;
 
 
 public interface  EmployeeService {
-     Employee add (String firstName,String lastName, int department);
+    Employee add (String firstName, String lastName, int department, double salary);
     Employee remove(String firstName, String lastName);
     Employee find(String firstName, String lastName);
-    Collection<Employee> findAll();
+    Collection<Employee> getAllEmployees();
 
-    Employee findMinSalaryInDepartment(int department);
-    Employee findMaxSalaryInDepartment(int department);
-    Collection<Employee> findAllInDepartment(int department);
-    Collection<Employee>findAllByDepartments();
-    boolean fillEmployees();
 }
 
 
